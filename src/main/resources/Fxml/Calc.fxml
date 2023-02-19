@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import org.kordamp.ikonli.javafx.FontIcon?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.calculator.calculator_ver3.Controllers.CalcController">
+   <children>
+      <BorderPane prefHeight="500.0" prefWidth="600.0">
+         <top>
+            <AnchorPane prefHeight="30.0" prefWidth="200.0" styleClass="displayTop" stylesheets="@../Styles/Calc.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="menuOnButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#menuOn" prefHeight="30.0" prefWidth="30.0" styleClass="menu" stylesheets="@../Styles/Basic.css">
+                     <graphic>
+                        <FontIcon iconColor="WHITE" iconLiteral="mdi-menu" iconSize="30" pickOnBounds="true">
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></FontIcon>
+                     </graphic>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="600.0" styleClass="displayTop" stylesheets="@../Styles/Calc.css" BorderPane.alignment="CENTER">
+               <children>
+                  <VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="160.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane prefHeight="80.0" prefWidth="600.0">
+                           <children>
+                              <TextField fx:id="input" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="60.0" prefWidth="580.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                 <font>
+                                    <Font name="Arial" size="24.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="TEXT" />
+                                 </cursor>
+                              </TextField>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="80.0" prefWidth="600.0">
+                           <children>
+                              <Label fx:id="output" alignment="CENTER_RIGHT" layoutX="20.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="80.0" prefWidth="560.0" textFill="WHITE">
+                                 <font>
+                                    <Font size="36.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </VBox>
+               </children>
+            </AnchorPane>
+         </center>
+         <bottom>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="310.0" prefWidth="600.0" styleClass="displayBottom" stylesheets="@../Styles/Calc.css" BorderPane.alignment="CENTER">
+               <children>
+                  <HBox prefHeight="310.0" prefWidth="600.0">
+                     <children>
+                        <AnchorPane prefHeight="310.0" prefWidth="300.0">
+                           <children>
+                              <VBox layoutY="30.0" prefHeight="280.0" prefWidth="300.0">
+                                 <children>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="a =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="aValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="b =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="bValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="c =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="cValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="d =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="dValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="e =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="eValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="f =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="fValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="g =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="gValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                              <Label layoutX="42.0" layoutY="-1.0" prefHeight="30.0" prefWidth="216.0" text="Variables :" textFill="WHITE">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="310.0" prefWidth="300.0">
+                           <children>
+                              <VBox layoutY="30.0" prefHeight="280.0" prefWidth="300.0">
+                                 <children>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="h =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="hValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="m =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="mValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="n =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="nValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="x =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css" fx:id="xValue">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="y =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="yValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="z =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="zValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                    <AnchorPane prefHeight="40.0" prefWidth="300.0">
+                                       <children>
+                                          <HBox prefHeight="40.0" prefWidth="300.0">
+                                             <children>
+                                                <Label alignment="CENTER" prefHeight="40.0" prefWidth="40.0" text="t =" textFill="WHITE">
+                                                   <font>
+                                                      <Font size="18.0" />
+                                                   </font>
+                                                </Label>
+                                                <AnchorPane prefHeight="40.0" prefWidth="260.0">
+                                                   <children>
+                                                      <TextField fx:id="tValue" layoutY="5.0" prefHeight="30.0" prefWidth="250.0" styleClass="inputField" stylesheets="@../Styles/Calc.css">
+                                                         <cursor>
+                                                            <Cursor fx:constant="TEXT" />
+                                                         </cursor>
+                                                         <font>
+                                                            <Font name="Arial" size="14.0" />
+                                                         </font>
+                                                      </TextField>
+                                                   </children>
+                                                </AnchorPane>
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </AnchorPane>
+                                 </children>
+                              </VBox>
+                              <Button layoutX="226.0" layoutY="-1.0" mnemonicParsing="false" onAction="#clear" prefHeight="30.0" prefWidth="60.0" styleClass="keypad" stylesheets="@../Styles/Calc.css" text="Clear">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                              <Button layoutX="150.0" layoutY="-1.0" mnemonicParsing="false" onAction="#operator" prefHeight="30.0" prefWidth="60.0" styleClass="keypad" stylesheets="@../Styles/Calc.css" text="Calc">
+                                 <font>
+                                    <Font name="System Bold" size="14.0" />
+                                 </font>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                  </HBox>
+               </children>
+            </AnchorPane>
+         </bottom>
+      </BorderPane>
+      <AnchorPane fx:id="menu" prefHeight="500.0" prefWidth="200.0">
+         <children>
+            <VBox prefHeight="500.0" prefWidth="200.0" styleClass="slider" stylesheets="@../Styles/Calc.css">
+               <children>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="menuOffButton" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#menuOff" prefHeight="30.0" prefWidth="30.0" styleClass="menu" stylesheets="@../Styles/Basic.css">
+                           <graphic>
+                              <FontIcon iconColor="WHITE" iconLiteral="mdi-menu" iconSize="30">
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor></FontIcon>
+                           </graphic>
+                        </Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchMode" prefHeight="30.0" prefWidth="200.0" styleClass="sliderButton" stylesheets="@../Styles/Calc.css" text="Basic Mode" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchMode" prefHeight="30.0" prefWidth="200.0" styleClass="sliderButton" stylesheets="@../Styles/Calc.css" text="Scientific Mode" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchMode" prefHeight="30.0" prefWidth="200.0" styleClass="sliderButton" stylesheets="@../Styles/Calc.css" text="Float Present Mode" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchMode" prefHeight="30.0" prefWidth="200.0" styleClass="sliderButton" stylesheets="@../Styles/Calc.css" text="Bitwise Operation Mode" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="30.0" prefWidth="200.0">
+                     <children>
+                        <Button alignment="BASELINE_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#switchMode" prefHeight="30.0" prefWidth="200.0" styleClass="sliderButton" stylesheets="@../Styles/Calc.css" text="Calculate Mode" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                           <cursor>
+                              <Cursor fx:constant="HAND" />
+                           </cursor></Button>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

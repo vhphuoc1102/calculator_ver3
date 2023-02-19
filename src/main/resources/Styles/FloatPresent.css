@@ -1,0 +1,40 @@
+.digitButtonBackground{
+    -fx-background-color: linear-gradient(to bottom right, #64697e, #252a3e);
+}
+.keypad{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+.keypad:hover{
+    -fx-background-color: #222639;
+}
+.menu{
+    -fx-background-color: transparent;
+}
+.menu:hover{
+    -fx-background-color: #222639;
+}
+.mode{
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 0;
+    -fx-text-fill: #2b2e3b;
+}
+.mode:hover{
+    -fx-background-color:#e6e6e6;
+}
+.displayTop{
+    -fx-background-color: #2b2e3b;
+}
+.displayBottom{
+    -fx-background-color: #2b2e3b;
+}
+.slider{
+    -fx-background-color: #64697e;
+    -fx-background-radius: 0 5 5 0;
+}
+.sliderButton{
+    -fx-background-color: transparent;
+}
+.sliderButton:hover{
+    -fx-background-color: #222639;
+}

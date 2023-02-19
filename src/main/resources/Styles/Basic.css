@@ -1,0 +1,33 @@
+.digitButtonBackground{
+    -fx-background-color: linear-gradient(to bottom right, #64697e, #252a3e);
+}
+.operatorButtonBackground{
+    -fx-background-color: linear-gradient(to bottom right, #5d6074, #181d31);
+}
+.keypad{
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+.keypad:hover{
+    -fx-background-color: #222639;
+}
+.menu{
+    -fx-background-color: transparent;
+}
+.menu:hover{
+    -fx-background-color: #222639;
+}
+.transverse, .display{
+    -fx-background-color:  #2b2e3b;
+    -fx-background-radius: 0;
+}
+.slider{
+    -fx-background-color: #64697e;
+    -fx-background-radius: 0 5 5 0;
+}
+.sliderButton{
+    -fx-background-color: transparent;
+}
+.sliderButton:hover{
+    -fx-background-color: #222639;
+}
